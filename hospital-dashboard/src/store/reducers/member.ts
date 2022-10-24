@@ -24,7 +24,7 @@ export const memberReducer = (state = initialState, action: any) => {
     case "EDIT_MEMBER":
       let ind:number = state.membersArr.findIndex((member:Member) => member.id == action.payload.id);
       let arr:any=state.membersArr;
-      arr[ind]= [...arr[ind],...action.payload.s];
+      arr[ind]=action.payload.m;
       return {
         ...state,
         membersArr: [...arr]

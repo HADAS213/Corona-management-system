@@ -21,7 +21,7 @@ export const saveMembers = (memberArr:Member[]) => {
 export const editMember = (memberId:string,member:Member) => {
     return {
         type: "EDIT_MEMBER",
-        payload: {id:memberId,s:member}
+        payload: {id:memberId,m:member}
     }
 }
 
